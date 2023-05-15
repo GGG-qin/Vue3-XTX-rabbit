@@ -3,6 +3,11 @@
 <template>
   <!-- 一级路由出口组件 -->
   <RouterView> </RouterView>
+  <div class="test">test scss</div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+  .test {
+    color: $xtxColor;
+  }
+</style>
