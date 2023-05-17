@@ -48,20 +48,28 @@
         background: url("@/assets/images/logo.png") no-repeat center 18px /
           contain;
 
-        li {
-          margin-right: 40px;
-          width: 38px;
-          text-align: center;
-
-          a {
-            font-size: 16px;
-            line-height: 32px;
-            height: 32px;
-            display: inline-block;
-
+        .app-header-nav {
+          width: 820px;
+          display: flex;
+          justify-content: space-around;
+          padding-left: 40px;
+          position: relative;
+          z-index: 998;
+          > li {
+            margin-right: 40px;
+            width: 38px;
+            text-align: center;
+            > a {
+              font-size: 16px;
+              line-height: 32px;
+              height: 32px;
+              display: inline-block;
+            }
             &:hover {
-              color: $xtxColor;
-              border-bottom: 1px solid $xtxColor;
+              > a {
+                color: $xtxColor;
+                border-bottom: 1px solid $xtxColor;
+              }
             }
           }
         }
